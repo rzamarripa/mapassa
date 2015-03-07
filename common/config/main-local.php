@@ -1,6 +1,6 @@
 <?php
-return [
-    'components' => [
+return array(
+    'components' => array(
         /*
 'db1' => [
             'class' => 'yii\db\Connection',
@@ -10,21 +10,21 @@ return [
             'charset' => 'utf8',
         ],
 */
-        'db'=>[
+        'db'=>array(
 					'class'=>'yii\db\Connection',
 					'dsn' => 'sqlsrv:server=.;database=EMPRESAS;',
 		            'username' => 'abacoAPP',
 		            'password' => 'S1stem@Pas5@',
 		            'charset' => 'GB2312',
 				    //'emulatePrepare' =>false
-				],
-        'mailer' => [
+				),
+        'mailer' => array(
             'class' => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
             'useFileTransport' => true,
-        ],
-    ],
-];
+        ),
+    ),
+);
